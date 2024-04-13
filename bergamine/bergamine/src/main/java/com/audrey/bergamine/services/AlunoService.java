@@ -37,5 +37,26 @@ public class AlunoService {
         return aluno.get();
     }
 
+    
+    public void delete(Integer id) {
+        alunoRepository.deleteById(id);
+    }
+
+    public Aluno update(Integer id, Aluno obj) {
+        Aluno aluno = alunoRepository.getReferenceById(id);
+        updateData(aluno, obj);
+        return alunoRepository.save(aluno);
+    }
+
+
+    private void updateData(Aluno aluno, Aluno obj){
+        aluno.setNome(obj.getNome());
+        aluno.setIdade(obj.getIdade());
+        aluno.setCurso(obj.getCurso());
+        aluno.setMatriculado(obj.getMatriculado());
+        aluno.setNota(obj.getNota());
+        aluno.setEndereco(obj.getEndereco());
+    }
+
 
 }

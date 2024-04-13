@@ -9,9 +9,9 @@
   "curso": "Análise e Desenvolvimento de Sistemas",
   "matriculado": true,
   "nota": {
-    "logica_e_Programacao": 9.7,
-    "banco_de_Dados": 9.9,
-    "desenv_Web": 9.8
+    "Lógica e Programação": 9.7,
+    "Banco de Dados": 10.0,
+    "Desenvolvimento Web I": 10.0
   },
   "endereco": {
     "rua": "Rua Rosa",

@@ -2,6 +2,8 @@ package com.audrey.bergamine.models;
 
 import java.io.Serializable;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -57,6 +59,7 @@ public class Nota implements Serializable {
         this.id = id;
     }
 
+    @JsonProperty("Lógica e Programação")
     public Double getLogica_e_Programacao() {
         return logica_e_Programacao;
     }
@@ -65,6 +68,7 @@ public class Nota implements Serializable {
         this.logica_e_Programacao = logica_e_Programacao;
     }
 
+    @JsonProperty("Banco de Dados")
     public Double getBanco_de_Dados() {
         return banco_de_Dados;
     }
@@ -73,6 +77,7 @@ public class Nota implements Serializable {
         this.banco_de_Dados = banco_de_Dados;
     }
 
+    @JsonProperty("Desenvolvimento Web I")
     public Double getDesenv_Web() {
         return desenv_Web;
     }
